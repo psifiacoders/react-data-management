@@ -1,13 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
-import CommingSoon from "./pages/comingsoon";
+import Authentication from "./pages/Authentication";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" index element={<Home />} />
-        <Route path="*" element={<CommingSoon />} />
+        <Route path="/" element={<Authentication />} />
       </Routes>
     </BrowserRouter>
   );
